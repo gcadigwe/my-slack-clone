@@ -30,7 +30,7 @@ function Login() {
           alt="slack"
         />
         <h1>Sign in to Zy's Slack</h1>
-        <p>sarzy.slack.com</p>
+        <p>Created by Sarzy</p>
         <Button onClick={signIn}>Sign in with Google</Button>
       </div>
     </div>
