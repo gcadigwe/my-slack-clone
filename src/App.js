@@ -3,15 +3,19 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Chat from "./components/Chat/Chat";
+import Login from "./components/Auth/Login";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { useStateValue } from "./components/StateProvider/StateProvider";
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <Router>
       <div className="App">
         {!user ? (
-          <h1>LOGIN page</h1>
+          <Login />
         ) : (
           <>
             {/* Header */}
