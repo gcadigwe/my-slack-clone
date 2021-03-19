@@ -26,9 +26,9 @@ function App() {
               {/* React-Router -> Chat Screen */}
               <Switch>
                 <Route exact path="/room/:roomId" component={Chat} />
-                <Route exact path="/">
+                {/* <Route exact path="/">
                   <h1>Welcome</h1>
-                </Route>
+                </Route> */}
               </Switch>
             </div>
           </>
